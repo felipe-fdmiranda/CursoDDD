@@ -90,7 +90,7 @@ describe('Customer Repository unit tests', () => {
 
         await expect(async () => {
             await customerRepository.find('ABC456');
-        }).rejects.toThrow('Customer not found.');
+        }).rejects.toThrow('Customer not found');
     });
 
     it('should find all customers', async () => {

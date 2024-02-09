@@ -39,7 +39,7 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
                 rejectOnEmpty: true
             });
         } catch (e) {
-            throw new Error(`Customer not found.`);
+            throw new Error(`Customer not found`);
         }
 
         const customer = new Customer(id, customerModel.name);
