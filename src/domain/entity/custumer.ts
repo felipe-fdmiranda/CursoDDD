@@ -62,7 +62,11 @@ export default class Customer {
         this._rewardPoints += points;
     }
 
-    set address(address: Address) {
+    changeAddress(address: Address) {
         this._address = address;
+    }
+
+    get address() {
+        return this._address;
     }
 }
